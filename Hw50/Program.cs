@@ -12,9 +12,9 @@ Console.WriteLine("Введите позицию столбца");
 int m = Convert.ToInt32(Console.ReadLine());
 int[,] numbers = new int[3, 4];
 
-CreatematrixRndInt(numbers);
+CreateMatrixRndInt(numbers);
 
-void CreatematrixRndInt(int[,] matrix)
+void CreateMatrixRndInt(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
@@ -25,7 +25,7 @@ void CreatematrixRndInt(int[,] matrix)
     }
 }
 
-void Printmatrix(int[,] matrix)
+void PrintMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
@@ -39,7 +39,8 @@ void Printmatrix(int[,] matrix)
     }
 }
 
-Printmatrix(numbers);
+PrintMatrix(numbers);
+
 if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
     Console.WriteLine($"/{n},{m}/ -> такого элемента в массиве нет");
 else Console.WriteLine($"Значение элемента на позиции /{n},{m}/-> {numbers[n - 1, m - 1]}");
