@@ -23,7 +23,7 @@ void CreateMatrixDouble(double[,] matrix)
     }
 }
 
-void WriteMatrixArray(double[,] matrix)
+void PrintMatrix(double[,] matrix)
 {
     for (int i = 0; i < m; i++)
     {
@@ -38,4 +38,4 @@ void WriteMatrixArray(double[,] matrix)
 }
 
 CreateMatrixDouble(matrix);
-WriteMatrixArray(matrix);
+PrintMatrix(matrix);
